@@ -1,0 +1,114 @@
+:root {
+  --card-height: 40px;
+  --card-width: content;
+}
+
+body {
+  min-height: 100vh;
+  background: #2D4356;
+  background: url("../images/earth-11595.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+.card {
+  
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 10px;
+  margin-top: 3rem;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background-color: rgba(149, 75, 162, 0.5);
+  color: #fbeee0;
+  font-size: 2rem;
+
+}
+
+.card2 {
+  
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 10px;
+  margin-top: 3rem;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background-color: #fbeee0;
+  color: #262A56;
+  
+}
+img {
+  width: 130px;
+  height: var(width/1.5);
+  margin-top: 50px;
+}
+h1 {
+  color: #fbeee0;
+  font-family: 'Lora', serif;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.user {
+  color: white;
+  font-size: 24px;
+  font-family: "Titan One", cursive;
+}
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 2rem;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
