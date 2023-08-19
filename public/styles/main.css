@@ -63,6 +63,25 @@ h1 {
   margin-bottom: 20px;
 }
 
+.checkAnswer{
+  color: #262A56;
+  font-family: 'Lora', serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.capitalAnswer{
+  opacity: 0%;
+  color: #fbeee0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.visible{
+  opacity: 100%;
+}
+
 p {
   color: white;
 }
