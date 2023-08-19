@@ -22,7 +22,7 @@ import axios from "axios";
 import bodyParser from "body-parser";
 
 const app = express();
-const port = 3000;
+const port = 8080;
 const API_URL = "https://restcountries.com/v3.1/alpha?codes=";
 
 app.use(express.static("public"));
