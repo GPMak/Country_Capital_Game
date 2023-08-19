@@ -30,7 +30,16 @@
           <input type="text" name="capital">
           <input type="submit" value="OK">
         </form>
-      </div>      
+      </div>
+      <div>
+        <h2 class="capitalAnswer"><%= locals.content[0].capital[0] %></h2>
+        <button class="checkAnswer" onclick="myFunction()">CHECK ANSWER</button>
+      <script>
+          function myFunction(){
+          document.querySelector(".capitalAnswer").classList.add("visible");
+        }
+       </script>
+      </div>    
       <% } %>
       <% if(locals.game){%>
        <% if (game.submitted===game.database){ %>
