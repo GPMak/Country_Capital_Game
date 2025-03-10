@@ -12,47 +12,44 @@
 
 <body>
   <h1>Welcome to the Country-Capital Game!</h1>
-      
     <form action="/submit" method="POST">
       <input class="button-74" type="submit" value="Generate Country">
     </form>
 
     <% if(locals.content){ %>
       <p>Press again to skip</p>
-<div class="card">
-        <h2><%= locals.content[0].name.common %></h2>
-       
-      </div>
-      <img src= <%= locals.content[0].flags.svg %> alt="flag">
-      <div class="card2">
-        <h2>Do you know the capital?&nbsp&nbsp&nbsp</h2>
-        <form action="/submitCapital" method="POST">
-          <input type="text" name="capital">
-          <input type="submit" value="OK">
-        </form>
-      </div>
-        <button class="checkAnswer" onclick="myFunction()">CHECK ANSWER</button>
-        <div>
-        <h2 id="capitalAnswer"><%= locals.content[0].capital[0] %></h2>
-        </div>
-      <script>
-        function myFunction() {
-          var x = document.getElementById("capitalAnswer");
-          if (x.style.display === "none") {
-          x.style.display = "block";
-          } else {
-          x.style.display = "none";
-          }
+    <div class="card">
+      <h2><%= locals.content[0].name.common %></h2>
+    </div>
+    <img src= <%= locals.content[0].flags.svg %> alt="flag">
+    <div class="card2">
+      <h2>Do you know the capital?&nbsp&nbsp&nbsp</h2>
+      <form action="/submitCapital" method="POST">
+        <input type="text" name="capital">
+        <input type="submit" value="OK">
+      </form>
+    </div>
+    <button class="checkAnswer" onclick="myFunction()">CHECK ANSWER</button>
+    <div>
+      <h2 id="capitalAnswer"><%= locals.content[0].capital[0] %></h2>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("capitalAnswer");
+        if (x.style.display === "none") {
+        x.style.display = "block";
+        } else {
+        x.style.display = "none";
         }
-       </script>    
+      }
+      </script>    
       <% } %>
       <% if(locals.game){%>
        <% if (game.submitted===game.database){ %>
         <h1>CORRECT!</h1>
         <% } else { %>
           <div class="card">
-            <h2><%= game.name %></h2>
-           
+          <h2><%= game.name %></h2>
           </div>
           <img src= <%= game.flag %> alt="flag">
           <div class="card2">
@@ -63,8 +60,21 @@
             </form>
           </div>      
         <h1>TRY AGAIN</h1>
+        <button class="checkAnswer" onclick="myFunction()">CHECK ANSWER</button>
+        <div>
+          <h2 id="capitalAnswer"><%= locals.content[0].capital[0] %></h2>
+        </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("capitalAnswer");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+            }
+          }
+          </script>    
         <% }} %> 
-       
 </body>
 
 </html>
