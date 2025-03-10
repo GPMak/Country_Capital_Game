@@ -82,6 +82,10 @@ h1 {
   opacity: 100%;
 }
 
+.visible{
+  opacity: 0%;
+}
+
 p {
   color: white;
 }
