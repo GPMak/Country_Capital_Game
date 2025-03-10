@@ -31,15 +31,20 @@
           <input type="submit" value="OK">
         </form>
       </div>
-      <div>
-        <h2 class="capitalAnswer"><%= locals.content[0].capital[0] %></h2>
         <button class="checkAnswer" onclick="myFunction()">CHECK ANSWER</button>
+        <div>
+        <h2 id="capitalAnswer"><%= locals.content[0].capital[0] %></h2>
+        </div>
       <script>
-          function myFunction(){
-          document.querySelector(".capitalAnswer").classList.add("visible");
+        function myFunction() {
+          var x = document.getElementById("capitalAnswer");
+          if (x.style.display === "none") {
+          x.style.display = "block";
+          } else {
+          x.style.display = "none";
+          }
         }
-       </script>
-      </div>    
+       </script>    
       <% } %>
       <% if(locals.game){%>
        <% if (game.submitted===game.database){ %>
