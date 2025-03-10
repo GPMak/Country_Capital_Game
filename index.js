@@ -59,12 +59,12 @@ app.post("/submit", async (req, res) => {
   app.post("/submitCapital", (req, res) => {
     const capitalCheck = {
       submitted: req.body.capital,
-      database: capital[0],
+      capital: capital[0],
       name: name,
       flag: flag
     }
     res.render("index.ejs", {game: capitalCheck});
-    console.log(capitalCheck.submitted===capitalCheck.database);
+    console.log(capitalCheck.submitted===capitalCheck.capital);
     console.log(capitalCheck.submitted);
     console.log(capitalCheck.database);
     
