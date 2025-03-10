@@ -57,14 +57,15 @@
               <input type="submit" value="OK">
             </form>
           </div>      
-        <h1>TRY AGAIN</h1>
+        <h1 class="tryAgain">TRY AGAIN</h1>
         <% }} %>
         <div>
-        <button class="checkAnswer" onclick="myFunction()">CHECK ANSWER</button>
         <h2 class="capitalAnswer"><%= locals.content[0].capital[0] %></h2>
+        <button class="checkAnswer" onclick="myFunction()">CHECK ANSWER</button>
         <script>
           function myFunction(){
           document.querySelector(".capitalAnswer").classList.add("visible");
+          document.querySelector(".tryAgain").classList.add("invisible");
         }
          </script>
         </div>       
