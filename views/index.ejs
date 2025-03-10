@@ -31,7 +31,7 @@
     </div>
     <button class="checkAnswer" onclick="myFunction()">CHECK ANSWER</button>
     <div>
-      <h2 id="capitalAnswer"><%= locals.content[0].capital[0] %></h2>
+      <h2 id="capitalAnswer" style="display: none"><%= locals.content[0].capital[0] %></h2>
     </div>
     <script>
       function myFunction() {
@@ -62,7 +62,7 @@
         <h1>TRY AGAIN</h1>
         <button class="checkAnswer" onclick="myFunction()">CHECK ANSWER</button>
         <div>
-          <h2 id="capitalAnswer"><%= game.capital %></h2> //changed from locals.content[0].capital[0] to game.capital, in order to reflect a different POST action (submit answer) 
+          <h2 id="capitalAnswer" style="display: none"><%= game.capital %></h2> //changed from locals.content[0].capital[0] to game.capital, in order to reflect a different POST action (submit answer) 
         </div>
         <script>
           function myFunction() {
