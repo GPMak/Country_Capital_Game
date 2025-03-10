@@ -57,10 +57,17 @@ img {
   height: var(width/1.5);
   margin-top: 50px;
 }
+
 h1 {
   color: #fbeee0;
   font-family: 'Lora', serif;
   margin-bottom: 20px;
+}
+
+.tryAgain {
+  color: #fbeee0;
+  font-family: 'Lora', serif;
+  margin-bottom: 5px;
 }
 
 .checkAnswer{
