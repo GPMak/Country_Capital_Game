@@ -61,6 +61,7 @@
         <% }} %>
         <div>
         <button class="checkAnswer" onclick="myFunction()">CHECK ANSWER</button>
+        <h2 class="capitalAnswer"><%= locals.content[0].capital[0] %></h2>
         <script>
           function myFunction(){
           document.querySelector(".capitalAnswer").classList.add("visible");
